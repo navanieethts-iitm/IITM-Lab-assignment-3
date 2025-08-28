@@ -1,4 +1,4 @@
-!/bin/bash
+!/bin/solution.sh
 # 1. Sort the contents of "numbers.txt" in ascending order
 sort numbers.txt
 
