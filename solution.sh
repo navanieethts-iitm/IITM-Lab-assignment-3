@@ -1,4 +1,5 @@
-!/bin/solution.sh
+#!/bin/bash
+
 # 1. Sort the contents of "numbers.txt" in ascending order
 sort -n numbers.txt
 
@@ -21,16 +22,16 @@ tail app.log
 chmod a+x script.sh
 
 # 8. Use a command to search for the word "TODO" in every ".py" file in the current directory
-grep -irl todo *.py
+grep -ilr todo *.py
 
 # 9. Show the last 20 commands entered in the terminal
-history -20
+history 20
 
 # 10. Show processes sorted by memory usage
 ps aux --sort -rss
 
 # 11. Find all directories named "backup" anywhere on the system
-find -type d -name backup
+find -type d -name "backup"
 
 # 12. Replace every occurrence of "foo" with "bar" in "example.txt" and save to "new_example.txt"
 sed "s/foo/bar/g" example.txt > new_example.txt
