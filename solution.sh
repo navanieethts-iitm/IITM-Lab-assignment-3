@@ -1,9 +1,9 @@
 !/bin/solution.sh
 # 1. Sort the contents of "numbers.txt" in ascending order
-sort numbers.txt
+sort -n numbers.txt
 
 # 2. Print the IP address of the machine
-ipconfig getifaddr en0
+ifconfig getifaddr en0
 
 # 3. Show the contents of a file named "readme.txt" in the current directory
 cat readme.txt
@@ -12,16 +12,16 @@ cat readme.txt
 wc -l data.csv
 
 # 5. Find all files containing the word "error" in the "logs" folder
-grep -il error logs
+grep -ilr "error" logs/
 
 # 6. Display the last 10 lines of "app.log"
-tail -n10 app.log
+tail app.log
 
 # 7. Change permissions of "script.sh" to make it executable for everyone
-chmod 111 script.sh
+chmod a+x script.sh
 
 # 8. Use a command to search for the word "TODO" in every ".py" file in the current directory
-grep -ril todo *.py
+grep -irl todo *.py
 
 # 9. Show the last 20 commands entered in the terminal
 history -20
